@@ -1,0 +1,12 @@
+font:
+  normal:
+    family: JetBrainsMono Nerd Font
+window:
+  padding:
+    x: 10
+    y: 10
+cursor:
+  style:
+    shape: Beam
+  vi_mode_style:
+    shape: Beam
