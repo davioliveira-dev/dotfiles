@@ -61,3 +61,14 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+alias nvm=fnm
+alias n=pnpm
+
+# fnm
+export PATH="/home/davio/.local/share/fnm:$PATH"
+eval "`fnm env`"
+
+PATH=~/.console-ninja/.bin:$PATH
+. "$HOME/.cargo/env"
+
