@@ -28,10 +28,11 @@ zinit light-mode for \
     zdharma-continuum/zinit-annex-rust
 
 ### End of Zinit's installer chunk
-zinit light grigorii-zander/zsh-npm-scripts-autocomplete
+zinit load zdharma-continuum/history-search-multi-word
 zinit light zsh-users/zsh-autosuggestions
-zinit light zsh-users/zsh-syntax-highlighting
-zinit light fdellwing/zsh-bat
+zinit light zdharma-continuum/fast-syntax-highlighting
+zinit load grigorii-zander/zsh-npm-scripts-autocomplete
+zinit load fdellwing/zsh-bat
 zinit ice depth=1; zinit light romkatv/powerlevel10k
 eval "$(~/.local/bin/mise activate zsh)"
 
