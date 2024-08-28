@@ -36,5 +36,10 @@ zinit load fdellwing/zsh-bat
 zinit ice depth=1; zinit light romkatv/powerlevel10k
 eval "$(~/.local/bin/mise activate zsh)"
 
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+setopt appendhistory
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
