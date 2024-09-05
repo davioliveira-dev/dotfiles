@@ -58,4 +58,6 @@ done
 
 echo "All Flatpak applications installed."
 
+echo "Installing deps with Ame"
 
+ame install -y ttf-jetbrains-mono-nerd morewaita git ripgrep curl wget unzip base-devel wl-clipboard github-cli zsh jdk8-openjdk bat gnome-tweaks apple_cursor flatpak noisetorch
