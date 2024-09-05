@@ -32,3 +32,26 @@ echo "Icon=/var/lib/AccountsService/icons/$USER" | sudo tee -a /var/lib/Accounts
 rm ~/profile.jpg
 
 echo "GNOME settings have been applied successfully."
+
+# Install applications
+echo "Installing Flatpak applications..."
+
+declare -A apps=(
+    ["chrome"]="com.google.Chrome"
+    ["discord"]="com.discordapp.Discord"
+    ["cohesion"]="io.github.cohesionapp.Cohesion"
+    ["blackbox"]="com.blackbox.Blackbox"
+    ["cartero"]="org.cartero.Cartero"
+    ["slack"]="com.slack.Slack"
+    ["alpaca"]="com.alpaca.Alpaca"
+    ["vscode"]="com.visualstudio.code"
+    ["zed"]="com.zed.Zed"
+    ["extension-manager"]="com.example.ExtensionManager"  # Replace with correct ID if known
+)
+
+for app in "${!apps[@]}"; do
+    echo "Installing $app..."
+    flatpak install -y flathub "${apps[$app]}"
+done
+
+echo "All Flatpak applications installed."
