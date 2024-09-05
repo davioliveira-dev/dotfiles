@@ -39,14 +39,14 @@ echo "Installing Flatpak applications..."
 declare -A apps=(
     ["chrome"]="com.google.Chrome"
     ["discord"]="com.discordapp.Discord"
-    ["cohesion"]="io.github.cohesionapp.Cohesion"
-    ["blackbox"]="com.blackbox.Blackbox"
-    ["cartero"]="org.cartero.Cartero"
+    ["cohesion"]="io.github.brunofin.Cohesion"
+    ["blackbox"]="com.raggesilver.BlackBox"
+    ["cartero"]="es.danirod.Cartero"
     ["slack"]="com.slack.Slack"
-    ["alpaca"]="com.alpaca.Alpaca"
+    ["alpaca"]="com.jeffser.Alpaca"
     ["vscode"]="com.visualstudio.code"
-    ["zed"]="com.zed.Zed"
-    ["extension-manager"]="com.example.ExtensionManager"  # Replace with correct ID if known
+    ["zed"]="dev.zed.Zed"
+    ["extension-manager"]="com.mattjakeman.ExtensionManager"
 )
 
 for app in "${!apps[@]}"; do
