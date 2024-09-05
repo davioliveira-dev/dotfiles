@@ -16,7 +16,7 @@ gsettings set org.gnome.mutter center-new-windows true
 gsettings set org.gnome.desktop.peripherals.mouse accel-profile 'flat'
 
 # Add Portuguese keyboard layout
-gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('xkb', 'pt')]"
+gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('xkb', 'br')]"
 
 # Set window switch shortcut to Alt-Tab
 gsettings set org.gnome.desktop.wm.keybindings switch-applications "['<Alt>Tab']"
