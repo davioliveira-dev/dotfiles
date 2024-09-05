@@ -47,6 +47,8 @@ declare -A apps=(
     ["vscode"]="com.visualstudio.code"
     ["zed"]="dev.zed.Zed"
     ["extension-manager"]="com.mattjakeman.ExtensionManager"
+    ["intellij"]="com.jetbrains.IntelliJ-IDEA-Ultimate"
+    ["datagrip"]="com.jetbrains.DataGrip"
 )
 
 for app in "${!apps[@]}"; do
@@ -55,3 +57,5 @@ for app in "${!apps[@]}"; do
 done
 
 echo "All Flatpak applications installed."
+
+
