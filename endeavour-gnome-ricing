@@ -57,8 +57,6 @@ declare -A apps=(
     ["slack"]="com.slack.Slack"
     ["alpaca"]="com.jeffser.Alpaca"
     ["extension-manager"]="com.mattjakeman.ExtensionManager"
-    ["intellij"]="com.jetbrains.IntelliJ-IDEA-Ultimate"
-    ["datagrip"]="com.jetbrains.DataGrip"
 )
 
 for app in "${!apps[@]}"; do
