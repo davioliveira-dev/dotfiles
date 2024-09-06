@@ -2,7 +2,7 @@
 
 echo "Installing deps with Yay"
 
-yay -S mise-bin ttf-jetbrains-mono-nerd morewaita git ripgrep curl wget unzip base-devel wl-clipboard github-cli zsh jdk8-openjdk bat gnome-tweaks apple_cursor flatpak noisetorch adw-gtk-theme wireguard-tools
+yay -S mise-bin ttf-jetbrains-mono-nerd morewaita git ripgrep curl wget unzip base-devel wl-clipboard github-cli zsh jdk8-openjdk bat gnome-tweaks apple_cursor flatpak noisetorch adw-gtk-theme wireguard-tools visual-studio-code-bin zed-git
 
 echo "Downloading fonts"
 
@@ -56,8 +56,6 @@ declare -A apps=(
     ["cartero"]="es.danirod.Cartero"
     ["slack"]="com.slack.Slack"
     ["alpaca"]="com.jeffser.Alpaca"
-    ["vscode"]="com.visualstudio.code"
-    ["zed"]="dev.zed.Zed"
     ["extension-manager"]="com.mattjakeman.ExtensionManager"
     ["intellij"]="com.jetbrains.IntelliJ-IDEA-Ultimate"
     ["datagrip"]="com.jetbrains.DataGrip"
