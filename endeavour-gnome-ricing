@@ -1,5 +1,17 @@
 #!/bin/bash
 
+echo "Installing deps with Yay"
+
+yay -S mise-bin ttf-jetbrains-mono-nerd morewaita git ripgrep curl wget unzip base-devel wl-clipboard github-cli zsh jdk8-openjdk bat gnome-tweaks apple_cursor flatpak noisetorch
+
+echo "Downloading fonts"
+
+git clone https://github.com/sahibjotsaggu/San-Francisco-Pro-Fonts.git
+unzip San-Francisco-Pro-Fonts-master.zip
+cd San-Francisco-Pro-Fonts-master 
+rm -rf README.md 
+sudo mv * /usr/share/fonts
+
 # Set fonts
 gsettings set org.gnome.desktop.interface font-name 'SF Pro Rounded 11'
 gsettings set org.gnome.desktop.interface monospace-font-name 'JetBrainsMono Nerd Font 12'
@@ -57,7 +69,3 @@ for app in "${!apps[@]}"; do
 done
 
 echo "All Flatpak applications installed."
-
-echo "Installing deps with Ame"
-
-ame install -y ttf-jetbrains-mono-nerd morewaita git ripgrep curl wget unzip base-devel wl-clipboard github-cli zsh jdk8-openjdk bat gnome-tweaks apple_cursor flatpak noisetorch
