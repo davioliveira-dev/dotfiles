@@ -1,4 +1,4 @@
-!/bin/bash
+# !/bin/bash
 
 echo "Installing deps"
 
@@ -15,6 +15,9 @@ wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/MPlus.zip
 unzip Mplus.zip
 cd Mplus
 sudo mv *.ttf /usr/share/fonts
+
+#gsettings set org.gnome.desktop.interface font-name 'SF Pro Rounded 11'
+#gsettings set org.gnome.desktop.interface monospace-font-name 'M+ Nerd Font 12'
 
 wget -O ~/profile.jpg https://avatars.githubusercontent.com/u/53924113?v=4
 sudo cp ~/profile.jpg /var/lib/AccountsService/icons/$USER
