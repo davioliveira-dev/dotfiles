@@ -1,8 +1,8 @@
 #!/bin/bash
 
-echo "Installing deps with Yay"
+echo "Installing deps/apps with Yay"
 
-yay -S gnome-software ttf-jetbrains-mono-nerd morewaita git ripgrep curl wget unzip base-devel wl-clipboard github-cli zsh jdk8-openjdk bat gnome-tweaks apple_cursor flatpak noisetorch adw-gtk-theme wireguard-tools visual-studio-code-bin jetbrains-toolbox
+yay -S gnome-software ttf-jetbrains-mono-nerd morewaita git ripgrep curl wget unzip base-devel wl-clipboard github-cli zsh jdk8-openjdk bat gnome-tweaks apple_cursor flatpak noisetorch adw-gtk-theme wireguard-tools visual-studio-code-bin jetbrains-toolbox google-chrome discord slack-desktop extension-manager alpaca-ai cartero blackbox-terminal notion-app-enhanced 
 
 echo "Downloading fonts"
 
@@ -45,23 +45,4 @@ rm ~/profile.jpg
 
 echo "GNOME settings have been applied successfully."
 
-# Install applications
-echo "Installing Flatpak applications..."
-
-declare -A apps=(
-    ["chrome"]="com.google.Chrome"
-    ["discord"]="com.discordapp.Discord"
-    ["cohesion"]="io.github.brunofin.Cohesion"
-    ["blackbox"]="com.raggesilver.BlackBox"
-    ["cartero"]="es.danirod.Cartero"
-    ["slack"]="com.slack.Slack"
-    ["alpaca"]="com.jeffser.Alpaca"
-    ["extension-manager"]="com.mattjakeman.ExtensionManager"
-)
-
-for app in "${!apps[@]}"; do
-    echo "Installing $app..."
-    flatpak install -y flathub "${apps[$app]}"
-done
-
-echo "All Flatpak applications installed."
+echo "Ricing made successfully!"
