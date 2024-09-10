@@ -30,10 +30,6 @@ gsettings set org.gnome.desktop.peripherals.mouse accel-profile 'flat'
 # Add Portuguese keyboard layout
 gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('xkb', 'br')]"
 
-# Set window switch shortcut to Alt-Tab
-gsettings set org.gnome.desktop.wm.keybindings switch-applications "['<Alt>Tab']"
-gsettings set org.gnome.desktop.wm.keybindings switch-applications-backward "['<Shift><Alt>Tab']"
-
 # Download and set profile picture
 wget -O ~/profile.jpg https://avatars.githubusercontent.com/u/53924113?v=4
 sudo cp ~/profile.jpg /var/lib/AccountsService/icons/$USER
