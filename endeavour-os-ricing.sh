@@ -2,7 +2,7 @@
 
 echo "Installing deps/apps with Yay"
 
-yay -S gnome-software ttf-jetbrains-mono-nerd morewaita git ripgrep curl wget unzip base-devel wl-clipboard github-cli zsh jdk8-openjdk bat gnome-tweaks apple_cursor flatpak noisetorch adw-gtk-theme wireguard-tools visual-studio-code-bin jetbrains-toolbox google-chrome discord slack-desktop extension-manager alpaca-ai cartero blackbox-terminal notion-app-enhanced 
+yay -S gnome-software ttf-jetbrains-mono-nerd morewaita git ripgrep curl wget unzip base-devel wl-clipboard github-cli zsh jdk8-openjdk bat gnome-tweaks apple_cursor flatpak noisetorch adw-gtk-theme wireguard-tools visual-studio-code-bin jetbrains-toolbox google-chrome discord slack-desktop extension-manager alpaca-ai cartero blackbox-terminal maven
 
 echo "Downloading fonts"
 
