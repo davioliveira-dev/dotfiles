@@ -8,7 +8,7 @@ echo "Downloading fonts"
 
 git clone https://github.com/sahibjotsaggu/San-Francisco-Pro-Fonts.git
 unzip San-Francisco-Pro-Fonts-master.zip
-cd San-Francisco-Pro-Fonts-master 
+cd San-Francisco-Pro-Fonts 
 rm -rf README.md 
 sudo mv * /usr/share/fonts
 
