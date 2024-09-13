@@ -43,3 +43,6 @@ setopt appendhistory
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+[ -s "/home/davio/.jabba/jabba.sh" ] && source "/home/davio/.jabba/jabba.sh"
+
