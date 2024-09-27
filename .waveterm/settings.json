@@ -1,0 +1,7 @@
+{
+  "autoupdate:channel": "latest",
+  "telemetry:enabled": false,
+  "window:nativetitlebar": false,
+  "term:fontfamily": "JetBrainsMono Nerd Font",
+  "term:fontsize": 13
+}
