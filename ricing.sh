@@ -1,11 +1,10 @@
 #!/bin/bash
 
-echo "Installing deps/apps with Paru"
+echo "Installing deps/apps with Yay"
 
-paru -S ttf-jetbrains-mono-nerd morewaita git ripgrep curl wget unzip base-devel wl-clipboard github-cli zsh bat gnome-tweaks apple_cursor noisetorch adw-gtk-theme visual-studio-code-bin steam
+yay -S gnome-software ttf-jetbrains-mono-nerd morewaita git ripgrep curl wget unzip base-devel wl-clipboard github-cli zsh bat gnome-tweaks apple_cursor flatpak noisetorch adw-gtk-theme wireguard-tools visual-studio-code-bin google-chrome libcanberra libwebgtk webkit2gtk wireguard-tools openresolv icu steam
 
 echo "Downloading fonts"
-
 git clone https://github.com/sahibjotsaggu/San-Francisco-Pro-Fonts.git
 cd San-Francisco-Pro-Fonts 
 rm -rf README.md 
@@ -25,5 +24,13 @@ gsettings set org.gnome.desktop.peripherals.mouse accel-profile 'flat'
 # Add Portuguese keyboard layout
 gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('xkb', 'br')]"
 
-echo "GNOME settings have been applied successfully."
+# Download and set profile picture
+wget -O ~/profile.jpg https://avatars.githubusercontent.com/u/53924113?v=4
+sudo cp ~/profile.jpg /var/lib/AccountsService/icons/$USER
+echo "[User]" | sudo tee /var/lib/AccountsService/users/$USER
+echo "Icon=/var/lib/AccountsService/icons/$USER" | sudo tee -a /var/lib/AccountsService/users/$USER
+
+# Cleanup
+rm ~/profile.jpg
+
 echo "Ricing made successfully!"
