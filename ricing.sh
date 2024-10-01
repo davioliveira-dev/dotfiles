@@ -25,15 +25,5 @@ gsettings set org.gnome.desktop.peripherals.mouse accel-profile 'flat'
 # Add Portuguese keyboard layout
 gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('xkb', 'br')]"
 
-# Download and set profile picture
-wget -O ~/profile.jpg https://avatars.githubusercontent.com/u/53924113?v=4
-sudo cp ~/profile.jpg /var/lib/AccountsService/icons/$USER
-echo "[User]" | sudo tee /var/lib/AccountsService/users/$USER
-echo "Icon=/var/lib/AccountsService/icons/$USER" | sudo tee -a /var/lib/AccountsService/users/$USER
-
-# Cleanup
-rm ~/profile.jpg
-
 echo "GNOME settings have been applied successfully."
-
 echo "Ricing made successfully!"
