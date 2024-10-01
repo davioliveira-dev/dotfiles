@@ -2,7 +2,7 @@
 
 echo "Installing deps/apps with Yay"
 
-yay -S gnome-software ttf-jetbrains-mono-nerd morewaita git ripgrep curl wget unzip base-devel wl-clipboard github-cli zsh bat gnome-tweaks apple_cursor flatpak noisetorch adw-gtk-theme wireguard-tools visual-studio-code-bin google-chrome libcanberra libwebgtk webkit2gtk wireguard-tools openresolv icu steam
+yay -S gnome-software ttf-jetbrains-mono-nerd morewaita git ripgrep curl wget unzip base-devel wl-clipboard github-cli zsh bat gnome-tweaks apple_cursor flatpak noisetorch adw-gtk-theme wireguard-tools visual-studio-code-bin google-chrome libcanberra libwebgtk webkit2gtk wireguard-tools openresolv icu steam gnome-backgrounds
 
 echo "Downloading fonts"
 git clone https://github.com/sahibjotsaggu/San-Francisco-Pro-Fonts.git
