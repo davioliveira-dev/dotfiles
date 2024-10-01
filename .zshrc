@@ -46,3 +46,6 @@ setopt appendhistory
 
 [ -s "/home/davio/.jabba/jabba.sh" ] && source "/home/davio/.jabba/jabba.sh"
 
+export PATH=$PATH:~/.local/bin
+
+
