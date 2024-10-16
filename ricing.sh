@@ -27,7 +27,8 @@ yay -S --noconfirm gnome-software \
     steam \
     gnome-backgrounds \
     gnome-remote-desktop \
-    tableplus-bin
+    tableplus-bin \
+    zed-git
 
 echo "📥 Downloading fonts..."
 git clone https://github.com/sahibjotsaggu/San-Francisco-Pro-Fonts.git
