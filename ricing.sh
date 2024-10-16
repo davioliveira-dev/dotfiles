@@ -23,14 +23,12 @@ yay -S --noconfirm gnome-software \
     flatpak \
     noisetorch \
     adw-gtk-theme \
-    wireguard-tools \
     visual-studio-code-bin \
     google-chrome \
     steam \
     gnome-backgrounds \
     gnome-remote-desktop \
-    heroic-games-launcher \
-    wg-client
+    heroic-games-launcher
 
 echo "📥 Downloading fonts..."
 git clone https://github.com/sahibjotsaggu/San-Francisco-Pro-Fonts.git
