@@ -26,8 +26,7 @@ yay -S --noconfirm gnome-software \
     google-chrome \
     steam \
     gnome-backgrounds \
-    gnome-remote-desktop \
-    heroic-games-launcher
+    gnome-remote-desktop
 
 echo "📥 Downloading fonts..."
 git clone https://github.com/sahibjotsaggu/San-Francisco-Pro-Fonts.git
@@ -68,5 +67,30 @@ sudo cp ~/profile.jpg /var/lib/AccountsService/icons/$USER
 
 # Clean up downloaded profile picture
 rm ~/profile.jpg
+
+echo "📦 Installing Flatpak applications..."
+flatpak install -y flathub io.github.flattool.Warehouse
+flatpak install -y flathub com.github.tchx84.Flatseal
+flatpak install -y flathub com.rtosta.zapzap
+flatpak install -y flathub io.appflowy.AppFlowy
+flatpak install -y flathub com.discordapp.Discord
+flatpak install -y flathub com.usebottles.bottles
+flatpak install -y flathub org.qbittorrent.qBittorrent
+flatpak install -y flathub com.mattjakeman.ExtensionManager
+flatpak install -y flathub org.ryujinx.Ryujinx
+flatpak install -y flathub com.stremio.Stremio
+flatpak install -y flathub com.slack.Slack
+flatpak install -y flathub dev.lizardbyte.app.Sunshine
+flatpak install -y flathub com.github.marhkb.Pods
+flatpak install -y flathub org.gnome.Epiphany
+flatpak install -y flathub dev.deedles.Trayscale
+flatpak install -y flathub com.raggesilver.BlackBox
+flatpak install -y flathub io.github.seadve.Kooha
+flatpak install -y flathub org.gtk.Gtk3theme.adw-gtk3
+flatpak install -y flathub org.gtk.Gtk3theme.adw-gtk3-dark
+
+# Set ALT+TAB as the shortcut for switching windows
+echo "🔀 Setting ALT+TAB as the shortcut for switching windows..."
+gsettings set org.gnome.desktop.wm.keybindings switch-windows "['<Alt>Tab']"
 
 echo "🎉 Ricing completed successfully!"
