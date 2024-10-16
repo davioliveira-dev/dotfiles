@@ -1,9 +1,0 @@
-[com/raggesilver/BlackBox]
-font='JetBrainsMono Nerd Font 12'
-terminal-padding=(10, 10, 10, 10)
-notify-process-completion=false
-cursor-shape=1
-cursor-blink-mode=1
-window-height=583
-window-width=1061
-remember-window-size=true
