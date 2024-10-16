@@ -26,7 +26,8 @@ yay -S --noconfirm gnome-software \
     google-chrome \
     steam \
     gnome-backgrounds \
-    gnome-remote-desktop
+    gnome-remote-desktop \
+    tableplus-bin
 
 echo "📥 Downloading fonts..."
 git clone https://github.com/sahibjotsaggu/San-Francisco-Pro-Fonts.git
