@@ -14,9 +14,8 @@ yay -S --noconfirm gnome-software \
     wget \
     unzip \
     base-devel \
-    wl-clipboard \
     github-cli \
-    zsh \
+    fish \
     bat \
     gnome-tweaks \
     apple_cursor \
